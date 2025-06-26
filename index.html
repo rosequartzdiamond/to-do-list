@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <!-- Link ke File CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link ke Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>To-Do List</h1>
+            <div class="menu-container">
+                <button id="menu-btn" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="menu-options" class="menu-options">
+                    <li data-filter="all">All</li>
+                    <li data-filter="complete">Complete</li>
+                    <li data-filter="incomplete">Incomplete</li>
+                    <li id="download-btn">Download (Save)</li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="input-area">
+            <input type="text" id="task-input" placeholder="Enter your task...">
+            <button id="add-btn"><i class="fas fa-plus"></i></button>
+        </div>
+
+        <ul id="task-list" class="task-list">
+            <!-- Daftar tugas akan ditambahkan oleh JavaScript di sini -->
+        </ul>
+
+        <div class="footer">
+            <button id="clear-all-btn">Clear all</button>
+        </div>
+    </div>
+
+    <!-- Link ke File JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
